@@ -96,8 +96,24 @@ section h3 {
   color: #333;
 }
 
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
+
 .participants-list li::before {
-  content: "👤 ";
+  content: none;
 }
 
 .no-participants {
